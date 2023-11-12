@@ -1,0 +1,170 @@
+/* NOTE: THIS CV IS NOT RESPONSIVE
+WORKS PRETTY WELL ON DEVICES WITH SCREEN WIDTH ABOVE 1000px;
+DIDN'T HAVE TIME TO ADD MEDIA QUERIES, MAYBE LATER */
+
+* {
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 14px;
+    background-color: #2f4f4f;
+}
+h1, h2, h3, h4, h5, h6, p {
+    margin: unset; /* personally prefer to override */
+}
+a {
+    color: inherit;
+}
+.container {
+    margin: 0 auto; /* center the container */
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+.job-title {
+    color: brown;
+}
+.left-screen {
+    width: 70%;
+    display: flex;
+    align-items: start;
+}
+.section-wrapper {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.profile-img {
+    position: sticky;
+    border: 3px solid black;
+    padding: 3px;
+    border-radius: 10px;
+}
+.profile-img img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    vertical-align: middle; /* to remove the gap below the image */
+}
+.profile {
+    gap: 15px;
+}
+.hero-icon {
+    width: 1em;
+    height: 1em;
+    padding: 5px;
+    border-radius: 5px;
+    box-sizing: content-box;
+}
+.card-container {
+    margin: 0;
+    padding: 20px;
+    color: white;
+    list-style: none;
+    background-color: #2f4f4f;
+    border-radius: 10px;
+    width: 30%;
+}
+.card-container li {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+    margin-bottom: 10px;
+    
+}
+.card-container li a, 
+.experience-entry-company {
+    display: flex;
+    align-items: center;
+}
+.card-container .hero-icon {
+    background-color: whitesmoke;
+}
+
+.card-container .hero-icon.transparent,
+.experience-entry .hero-icon.transparent {
+    background-color: transparent;
+}
+
+/* Work Experience Section */
+.work-experience {
+    display: flex;
+    flex-direction: column;
+}
+.work-experience .hero-icon {
+    background-color: #2f4f4f;
+}
+.work-experience-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.experience-entry {
+    margin-bottom: 15px;
+}
+.experience-entry-description {
+    padding: 0px;
+}
+.experience-entry-description li {
+    /* this is to make the list style flush with the li and
+    keep the text indentation intact when breaking to new lines */
+    list-style-position: outside;
+    list-style: square;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+.skills-container {
+    margin-bottom: 15px;
+}
+.skills-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.skills-list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 5px;
+}
+.skills-list li {
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgb(211, 211, 211);
+}
+.experience-entry-timespan {
+    font-style: italic;
+    color: brown;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: white;
+}
